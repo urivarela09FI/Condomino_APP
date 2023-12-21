@@ -54,6 +54,21 @@ Condomino es una aplicación web diseñada para gestionar comunidades. Permite a
     ```
 
 ## Ejecución
+Después de crear el entorno virtual, ejecuta el código dentro de la terminal para activar el entorno virtual
+
+    ```bash
+    venv\Scripts\activate
+    ```
+Posteriormente, inicia la aplicación web
+
+     ```bash
+    python app.py
+    ```
+
+Abre tu navegador y visita la liga del servidor proporcionada en la terminal, pulsa CTRL+C para salir
+
+O bien:
+
 1. Ejecuta la aplicación:
 
     ```bash
