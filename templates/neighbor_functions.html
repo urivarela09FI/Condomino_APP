@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones de Vecino</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/neighbor_functions.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Funciones de Vecino</h1>
+
+        <p>Como vecino, tienes acceso a las siguientes funciones:</p>
+
+        <ul>
+            <li>Visualización de avisos en la sección "Anuncios"</li>
+            <li>Publicación de preguntas de interés general</li>
+            <li>Publicación de anuncios de comercios o negocios locales en la sección de "Comunidad" (2 veces al mes)</li>
+            <li>Participación en las encuestas publicadas en la sección "Votaciones"</li>
+        </ul>
+
+        <a href="{{ url_for('home') }}">Volver a la página de inicio</a>
+    </div>
+</body>
+</html>
+

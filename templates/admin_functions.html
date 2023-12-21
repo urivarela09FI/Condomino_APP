@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones de Administrador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/admin_functions.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Funciones de Administrador</h1>
+
+        <p>Como administrador, tienes acceso a las siguientes funciones:</p>
+
+        <ul>
+            <li>Publicación de avisos en la sección "Anuncios"</li>
+            <li>Publicación de encuestas en la sección "Votaciones"</li>
+        </ul>
+
+        <a href="{{ url_for('home') }}">Volver a la página de inicio</a>
+    </div>
+</body>
+</html>

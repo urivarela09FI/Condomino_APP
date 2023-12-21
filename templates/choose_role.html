@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige tu Rol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style_choose.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Elige tu Rol</h1>
+        <p>Seleccionaste el rol de {{ role }}</p>
+        
+        {% if role == 'vecino' %}
+            <div class="role-info">
+                <p>Funciones activadas para VECINOS:</p>
+                <a href="{{ url_for('neighbor_functions') }}">Ir a funciones activadas para VECINOS</a>
+            </div>
+        {% elif role == 'administrador' %}
+            <div class="role-info">
+                <p>Funciones activadas para ADMINISTRADORES:</p>
+                <a href="{{ url_for('admin_functions') }}">Ir a funciones específicas para ADMINISTRADORES</a>
+            </div>
+        {% endif %}
+        
+        <div class="user-actions">
+            <a href="{{ url_for('register') }}">Registrar</a>
+            <a href="{{ url_for('login') }}">Iniciar sesión</a>
+        </div>
+    </div>
+</body>
+</html>

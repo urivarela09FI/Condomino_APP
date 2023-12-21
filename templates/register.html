@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/register.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Usuario</h1>
+
+        <form method="post" action="{{ url_for('register') }}">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" required>
+
+            <label for="username">Usuario:</label>
+            <input type="text" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" required>
+
+            <label for="music_preferences">Gustos Musicales (Selecciona múltiples):</label>
+            <select name="music_preferences" multiple>
+                <option value="rock">Rock</option>
+                <option value="banda">Banda</option>
+                <option value="pop">Pop</option>
+                <option value="electronica">Electrónica</option>
+                <option value="salsa_cumbia">Salsa, Cumbia</option>
+            </select>
+
+            <label for="hobbies">Hobbies (Selecciona múltiples):</label>
+            <select name="hobbies" multiple>
+                <option value="instrumentos">Instrumentos Musicales</option>
+                <option value="deportes">Deportes</option>
+                <option value="videojuegos">Videojuegos</option>
+                <option value="lectura">Lectura</option>
+                <option value="baile">Baile</option>
+            </select>
+
+            <label for="favorite_festivity">Festividad Favorita (Selecciona múltiples):</label>
+            <select name="favorite_festivity" multiple>
+                <option value="navidad">Navidad</option>
+                <option value="halloween">Halloween</option>
+                <option value="independencia">Independencia</option>
+                <option value="dia_de_muertos">Día de Muertos</option>
+            </select>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
